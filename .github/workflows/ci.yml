@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   build-and-test:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux, x64]
     steps:
       - name: Print build information
         run: "echo head_ref: ${{ github.head_ref }}, ref: ${{ github.ref }}"
